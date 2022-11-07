@@ -3,3 +3,17 @@
   font-size: 16px;
   color-scheme: light dark;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fff;
+    --background-color-scheme: #333;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000;
+    --background-color-scheme: #fff;
+  }
+}

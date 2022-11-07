@@ -15,7 +15,7 @@
           <template v-for="record in props.dataSource">
             <template v-if="item.slot">
               <slot
-                name="item.slot.name"
+                :name="item.slot.name"
                 :text="item.field ? record[item.field] : record"
                 :record="record"
                 :index="index"
@@ -54,6 +54,7 @@ const tableWidthAttr = computed(() => {
       case "undefined":
       case "number":
         if (!width || width <= 0) {
+          // minmax(0,1fr) 防止子元素撑开
           width = "minmax(0,1fr) ";
         } else {
           width = `${width}px`;

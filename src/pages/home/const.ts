@@ -10,7 +10,7 @@ const intervalTaskColumn = [
   { title: "定时任务描述", field: "description" },
   { title: "创建时间", field: "createTime" },
   { title: "状态", field: "idDelete" },
-  { title: "操作", field: "operation" },
+  { title: "操作", field: "operation", slot: { name: "operation" } },
 ];
 
 export { intervalTaskColumn };

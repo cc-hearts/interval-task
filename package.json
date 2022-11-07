@@ -1,5 +1,5 @@
 {
-  "name": "interval-task",
+  "name": "@repo/interval-task",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "monaco-editor": "^0.34.1",
+    "vite-plugin-monaco-editor": "^1.1.0",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6"
   },
